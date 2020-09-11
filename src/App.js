@@ -12,14 +12,13 @@ import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.com
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
- 
+
 import './App.css';
 
 
 
 
-class App extends Component { 
-  
+class App extends Component {  
   usubscribeFromAuth = null
 
   componentDidMount(){
@@ -39,7 +38,6 @@ class App extends Component {
 
       }
       setCurrentUser(userAuth);
-      
     });
   }
 
@@ -64,7 +62,7 @@ class App extends Component {
   }
 }
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
 })
 
 const mapDispatchToProps = dispatch => ({
