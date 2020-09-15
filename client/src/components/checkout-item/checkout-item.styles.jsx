@@ -37,6 +37,7 @@ export const QuantityContainer = styled(TextContainer)`
 `;
 
 export const RemoveButtonContainer = styled.div`
-  padding-left: 12px;
+  color: red;
+  padding-left: 86px;
   cursor: pointer;
 `;
